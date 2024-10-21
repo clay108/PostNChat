@@ -41,6 +41,7 @@ Ensure you have the following installed on your machine:
     npm install
   ```
 3.Create a .env file in the root directory and add the following environment variables:
+
 #for client side
  ```bash
 REACT_APP_PUBLIC_FOLDER = http://localhost:5000/images/
