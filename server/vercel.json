@@ -3,14 +3,16 @@
     "name": "PostNChat",
     "builds": [
         {
-            "src": "/index.js",
+            "src": "index.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/index.js"
-        }
+        { "src": "/auth/(.*)", "dest": "/index.js" },
+        { "src": "/user/(.*)", "dest": "/index.js" },
+        { "src": "/posts/(.*)", "dest": "/index.js" },
+        { "src": "/upload/(.*)", "dest": "/index.js" },
+        { "src": "/chat/(.*)", "dest": "/index.js" },
+        { "src": "/message/(.*)", "dest": "/index.js" }
     ]
 }
