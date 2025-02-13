@@ -22,7 +22,7 @@ const ChatBox = ({ chat, currentUser, setSendMessage,  receivedMessage }) => {
       try {
         const { data } = await getUser(userId);
         setUserData(data);
-        console.log(data);
+        // console.log(data);
       } catch (error) {
         console.log(error);
       }
